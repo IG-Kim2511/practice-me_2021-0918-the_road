@@ -15,6 +15,7 @@ Array.from(navBtn).forEach((a_item)=>{
 
 // ❌코딩용... 자동으로 가장 밑으로 스크롤
 // scrollBy()
-document.addEventListener("scroll",()=>{
+/* document.addEventListener("scroll",()=>{
     window.scrollBy(0, window.innerHeight);
 });
+ */
