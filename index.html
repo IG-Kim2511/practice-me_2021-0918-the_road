@@ -160,7 +160,7 @@
 
         </section>
 
-        <!-- 🍀contact -->
+        <!-- 🍀contact   -->
 
         <section class="contact" id="contact"> 
             <h1 class="contact-heading">contact me</h1>
@@ -169,11 +169,29 @@
             <!-- css 16 -->
             <form action="" class="contact-form" >
                 <div class="input-group">
-                    <label for=""> full name</label>
-                    <input type="text">
+                    <label for="name"> full name</label>
+                    <input type="text" placeholder="enter" name="name">
                 </div>
 
-                form
+                <div class="input-groups">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="email" class="contact-input" name="email">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="">phone</label>
+                    <input type="text" placeholder="phone" class="contact-input">
+                </div>
+
+                <div class="input-group">
+                    <label for="">message</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-textarea"></textarea>
+                </div>
+
+                <input type="submit" value="submit" class="form-btn">
+                
             </form>
         </section>
 
@@ -184,6 +202,8 @@
 
 
     </div>
+
+    <div style="height:30vh"></div>
 
     <script src="script.js"></script>
   </body>
