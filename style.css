@@ -325,9 +325,9 @@ html{
 
 .navigation-button{
   
-    color: red;
+    background: violet;
 
-    padding: .5rem;
+    padding: 1rem;
     border-radius: .5rem;
     border: none;
     font-size: 1.5rem;
