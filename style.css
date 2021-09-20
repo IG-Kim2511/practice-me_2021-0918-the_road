@@ -147,7 +147,7 @@ html{
 }
 
 .header-image{
-    background-color: aquamarine;
+    
     width: 35%;
     animation: float 20s infinite;
 }
@@ -164,3 +164,103 @@ html{
 }
 
 /* 🍀popular-tour */
+.popular-tours{
+    padding: 5rem 0 10rem 0;
+}
+
+.popular-tours-heading{
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    color: var(--primary-color);
+    text-shadow: 1rem 2rem 0.5rem red;
+}
+
+.cards-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    
+    width: 35rem;
+    position: relative;
+    perspective: 150rem;
+    
+}
+
+.card-image{
+ 
+
+    width: 100%;
+    border-radius: .5rem;
+
+    position: relative;
+
+    z-index: 10;
+    opacity: 0.9;
+
+
+    /* js 02 */
+    transition: all 1s;
+
+
+}
+
+
+/* js 02 */
+
+.change>.front-side{
+    background-color: yellow;
+    transform: translateZ(-5rem) translateX(3rem);
+    box-shadow: 0  2rem 4rem #777;
+    opacity: 0.5;
+    z-index: 0;
+}
+/* 
+.front-side:hover{
+    background-color: yellow;
+    transform: translateZ(-5rem) translateX(3rem);
+    box-shadow: 0  2rem 4rem #777;
+    opacity: 0.5;
+    z-index: 0;
+
+} */
+
+.tour-name{
+    /* background-color: yellow; */
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 2rem blue;
+
+    position: absolute;
+    top: 30%;
+    right: 1.5rem;
+    color: white;
+
+}
+
+.card-list{
+
+    width: 80%;
+
+    margin: auto;
+    padding: 2rem 0 3rem 0;
+}
+
+.card-list-item{
+    background-color: yellow;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: grey;
+    margin: 2rem 0;
+
+    border-bottom: 0.1rem solid var(--primary-color);
+    padding: 1.5rem;
+
+}
+
+.back-side{
+    
+}
