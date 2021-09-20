@@ -81,9 +81,7 @@ html{
 }
 
 .header-text{
-    background-color: yellow;
-
-    text-align: center;
+        text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 0.5rem 0.5rem 0.5rem lightcoral;
@@ -104,3 +102,65 @@ html{
 }
 
 /* 🍀logo */
+.logo{
+    
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+}
+
+.logo h1{
+    display: flex;
+}
+.logo h1 span {
+    background-color: yellowgreen;
+
+    width: 3.5rem;
+    height: 3.5rem;
+
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin: .5rem;
+    border-radius: 50%
+}
+
+@keyframes drop {
+    30%{
+        transform: translateY(-100%);
+    }
+    
+}
+
+.logo h1 span:nth-child(1){
+    animation: drop 2s 0.1s infinite;
+}
+.logo h1 span:nth-child(2){
+    animation: drop 2s 0.3s infinite;
+}
+.logo h1 span:nth-child(3){
+    animation: drop 2s 0.6s infinite;
+}
+.logo h1 span:nth-child(4){
+    animation: drop 2s 0.9s infinite;
+}
+
+.header-image{
+    background-color: aquamarine;
+    width: 35%;
+    animation: float 20s infinite;
+}
+
+@keyframes float {
+
+    30%{
+        transform: translateZ(-500rem) translateX(150rem);
+    }
+    60%{
+        transform: translateZ(-1500rem) translateX(800rem);
+    }
+    
+}
+
+/* 🍀popular-tour */
