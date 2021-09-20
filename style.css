@@ -73,7 +73,7 @@ html {
 }
 
 .open-navbar-icon{
-  background-color: yellow;
+  background-color: #eee;
   position: fixed;
   top: 6.5rem;
   left: 6.5rem;
@@ -98,7 +98,125 @@ html {
   background-color: green;
 }
 
-/* click and change */
+/* 🍀click nav and wrap*/
+.navbar-wrapper{
+
+  background-color: yellow;
+
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  bottom: -100%;
+  opacity: 0;
+
+  z-index: 300;
+  padding: 3.5rem 5.5rem 3.5rem 3.5rem;
+
+  transition: all .5s;
+
+
+}
+
+/* js */
+.change .navbar-wrapper{
+  bottom: 0%;
+  opacity: 1;
+
+  transition: all 1s;
+
+}
+
+
+.navbar {
+  width: 100%;
+  height: 100%;
+
+
+  position: relative;
+  overflow-y: hidden;
+}
+
+.close-navbar-icon{
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 300;
+}
+
+/* css 32 */
+.close-navbar-icon .line{
+  position: absolute;
+}
+
+.line-1{
+  transform: rotate(40deg);
+}
+.line-2{
+  transform: rotate(-40deg);
+}
+.nav-list{
+  height: 100%;
+
+  display: flex;
+}
+
+.nav-link{
+  width: 100%;
+
+  height: 100%;
+
+  background-color: yellow;
+
+  font-size: 3rem;
+  font-weight: 700;
+  color: #eee;
+  text-transform: uppercase;
+
+  opacity: .8;
+
+  position: inherit;
+  top: -100%;
+
+  transition: all .3s;
+}
+
+.change .nav-link{
+  top: 0;
+
+}
+
+.nav-link:hover{
+  opacity: 1;
+  color: violet;
+}
+
+
+/* css 40  */
+.change .nav-link:nth-child(1){
+  transition: all .3s;
+}
+.change .nav-link:nth-child(2){
+  transition: all .4s;
+}
+.change .nav-link:nth-child(3){
+  transition: all .5s;
+}
+.change .nav-link:nth-child(4){
+  transition: all .6s;
+}
+.change .nav-link:nth-child(5){
+  transition: all .7s;
+}
+
+
+
+
+
+
+
+
+
 
 
 
